@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD0lfvudGwqg5pOIxsNyXd3Sc6Q-kEAsjI&sensor=false">
+</script>
+<link rel="shortcut icon" href="favicon.ico" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="paintings" />
+<title>Robert O'Connor - American Artist</title>
+<link href="../rbmain.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+<script>
+var myCenter=new google.maps.LatLng(41.352217,-71.976435);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  panControl:true,
+    zoomControl:true,
+    mapTypeControl:true,
+    scaleControl:true,
+    streetViewControl:true,
+    overviewMapControl:true,
+    rotateControl:true,    
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</head>
+<body class="twoColHybLtHdr">
+
+<div id="container">
+  	<div id="header">
+	<a href="../index.html" id="logo"><span>Logo</span></a>
+    <!-- end of #header --></div>
+  	<div id="sidebar1">
+    	<h3><img src="../images/clouds03.jpg" width="162" height="158" alt="clouds, detail of painting" title="&quot;Der Rhein bei D&uuml;sseldorf&quot;, detail" /></h3>
+		<h3>Intersite Destinations</h3>
+   		<ul>
+	  		<li><a href="../index.html">home</a></li>
+            <li><a href="../tutor/index.html">tutoring</a></li>
+      		<li><a href="../piping/index.html">piping services</a></li>
+	  		<li>artwork</li>
+      		<li><a href="../music/index.html">music</a></li>
+ 	  		<li><a title="under construction">genealogies</a></li>
+	  		<li><a title="under construction">iFAQ</a></li>
+   		</ul>
+    	<h3><img src="../images/distance02.jpg" width="162" height="158" alt="seascape, detail of painting" title="&quot;Der Rhein bei D&uuml;sseldorf&quot;, detail" /></h3>
+  	<!-- end #sidebar1 --></div>
+  	<div id="mainContent">
+    	<h2>Robert O'Connor</h2>
+   	  <h3>Artist</h3>
+    	<p>Robert O'Connor, an American artist, is native of Brooklyn, New York and currently resides in Mystic, Connecticut. He studied drawing at the Brooklyn Museum of Art during his grammar school years then later at Brooklyn College and recently at the Rhode Island School of Design. </p>
+    	<p>He was a student of the late Joseph Stapleton, formerly of Pratt Institute in Brooklyn, New York and The Art Students League in New York City.</p>
+      <p>He is an Elected Artist of the Mystic Arts Center in Mystic, Connecticut and has exhibited his work at the Dolan Art Gallery in Locust Valley, New York, the Oyster Bay Historical Society in Oyster Bay, New York, The Hempsted Houses in New London, Connecticut and the Ashbel Woodward House in Franklin, Connecticut.</p><p>His work is held in private collections in North America and Europe.</p>
+        <em>
+        <p>An on-line catalog of work is currently under construction.</p></em>
+<!--        
+        <div id="googleMap" style="width:450px;height:380px;"></div>
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+Enter your starting address:
+<input type="text" name="saddr" />
+<input type="hidden" name="daddr" value="117 Cow Hill Road, Mystic CT" />
+<input type="submit" value="get directions" />
+</form>
+-->
+    <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<br class="clearfloat" />
+	<div id="footer">
+    	<p>
+    	<a href="http://www.fatcow.com/green-certified/rocbrooklyn.com" 
+    	onclick="MyWindow=window.open('http://www.fatcow.com/green-certified/rocbrooklyn.com','greenCertified','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=550,height=700,left=50,top=50'); return false;"><img src="http://www.fatcow.com/green-certified/hosting-badge-9.png" alt="Hosting site badge" /></a>&nbsp;&nbsp;
+      	<img src="../images/valid-xhtml10.png" width="88" height="31" alt="w3c badge" />
+        &nbsp;&nbsp;&nbsp;&nbsp;<span id="ver">v 0.012</span>
+        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&copy;2014 rocbrooklyn.com</h6>
+
+ 		</p>
+    <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
